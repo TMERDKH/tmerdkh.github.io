@@ -1,0 +1,28 @@
+.navbar {
+    margin: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+}
+
+.logo * {
+font-size: 40px;
+font-family: Snell Roundhand, cursive; 
+}
+
+.logo {
+    width: 20%;
+}
+
+.choices {
+    width: 60%;
+}
+
+.choices button {
+    width: 20%;
+}
+
+.contact {
+    width:20%;
+    float:right;
+}

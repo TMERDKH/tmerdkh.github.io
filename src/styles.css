@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: Optima;
+}
+
+button {
+    background: none;
+    background-color: none;
+    border: none;
+    font-size: 20px;
+    box-shadow: none;
+}
+
+button:hover {
+    opacity: 0.4;
+}
+
+button:focus, button:active, button:focus:active {
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
