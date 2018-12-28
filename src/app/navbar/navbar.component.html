@@ -1,0 +1,47 @@
+<mat-drawer-container class="container" hasBackdrop=true >
+
+    <div fxShow="true" fxHide.gt-sm="true">
+        <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon> </button> </div>
+
+    <mat-drawer #drawer class="sidenav" mode="push">
+
+        <button mat-icon-button (click)="drawer.toggle(); redirect('paintings')">  paintings </button> 
+        <br>
+        <button (click)="drawer.toggle(); redirect('sketches')"> sketches </button> 
+        <br>
+        <button (click)="drawer.toggle(); redirect('about')"> about </button> 
+        <br>
+        <button (click)="drawer.toggle(); redirect('contact')" class = "contact"> contact </button>
+
+    </mat-drawer>
+    
+    </mat-drawer-container>
+    
+<div fxShow="true" fxHide.gt-sm="true">
+    <div class = "logo-mobile">
+        <button (click)="redirect('')">  Tamar Merdkhanian </button>
+    </div>
+
+</div>
+    
+<div>
+    <mat-toolbar>
+
+      <div fxShow="true" fxHide.lt-md="true" class = "navbar">
+
+          <button class = "logo" (click)="redirect('')">  Tamar Merdkhanian </button>
+          <button (click)="redirect('paintings')">  paintings </button> 
+          <button (click)="redirect('sketches')"> sketches </button> 
+          <button (click)="redirect('about')"> about </button> 
+          <button (click)="redirect('contact')" class = "contact"> contact </button>
+  
+      </div>
+
+      
+  
+    </mat-toolbar>
+
+  </div>
+
+
+

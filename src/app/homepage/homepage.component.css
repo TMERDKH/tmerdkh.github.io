@@ -1,0 +1,86 @@
+* {
+    text-align: center;
+}
+
+.homepage-image {
+    position: relative;
+    margin-top: 10px;
+}
+
+.homepage-image img {
+    width: 85vw;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.homepage-image * {
+    font-family: none;
+    font-size: 4vw;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1vw;
+} 
+
+.homepage-image p {
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 6s; /* Firefox < 16 */
+        -ms-animation: fadein 6s; /* Internet Explorer */
+         -o-animation: fadein 6s; /* Opera < 12.1 */
+            animation: fadein 6s;
+}
+
+td img {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.homepage-shop {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+
+.homepage-shop img:hover {
+    opacity: 0.5;
+}
+
+table {
+    width: 100%;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
