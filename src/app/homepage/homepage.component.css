@@ -4,6 +4,11 @@
 
 .homepage-image {
     position: relative;
+    margin-top: 10px;
+}
+
+.homepage-image img {
+    width: 85vw;
 }
 
 .title {
@@ -13,13 +18,14 @@
     transform: translate(-50%, -50%);
 }
 
+
 .homepage-image * {
     font-family: none;
-    font-size: 40px;
+    font-size: 4vw;
     color: white;
     font-weight: bold;
-    letter-spacing: 20px;
-}
+    letter-spacing: 1vw;
+} 
 
 .homepage-image p {
     -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
@@ -31,13 +37,16 @@
 
 td img {
     margin-bottom: 10px;
-    width: 80%;
+    width: 300px;
+    height: 400px;
 }
 
 .homepage-shop {
     font-size: 20px;
     font-weight: lighter;
-    margin: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
 }
 
 

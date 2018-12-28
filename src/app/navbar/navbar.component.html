@@ -1,17 +1,44 @@
-<div class = "navbar">
-  <mat-toolbar>  
+<mat-drawer-container class="example-container" hasBackdrop=true autosize>
 
-    <span class = "logo">
-        <button (click)="redirect('')">  Legend of Tamar </button>
-    </span>
+    <mat-drawer #drawer class="example-sidenav" mode="over">
+        <button (click)="redirect('paintings')">  paintings </button> 
+        <br>
+        <button (click)="redirect('sketches')"> sketches </button> 
+        <br>
+        <button (click)="redirect('about')"> about </button> 
+        <br>
+        <button (click)="redirect('contact')" class = "contact"> contact </button>
+    </mat-drawer>
+    
+    </mat-drawer-container>
+    
+<div>
+    <mat-toolbar>
 
-    <span class = "choices">
-      <button (click)="redirect('paintings')">  paintings </button> 
-      <button (click)="redirect('sketches')"> sketches </button> 
-      <button (click)="redirect('about')"> about </button> 
-    </span>
+      <div fxShow="true" fxHide.lt-md="true" class = "navbar">
 
-    <button (click)="redirect('contact')" class = "contact"> contact </button>
+          <button class = "logo" (click)="redirect('')">  Legend of Tamar </button>
+          <button (click)="redirect('paintings'); drawer.close()">  paintings </button> 
+          <button (click)="redirect('sketches')"> sketches </button> 
+          <button (click)="redirect('about')"> about </button> 
+          <button (click)="redirect('contact')" class = "contact"> contact </button>
+  
+      </div>
 
-</mat-toolbar>
-</div>
+      <div fxShow="true" fxHide.gt-sm="true" class="navbar">
+
+          <button class = "logo-mobile" (click)="redirect('')">  Legend of Tamar </button>
+          <button mat-icon-button (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+          </button>
+    
+      </div>
+
+      
+  
+    </mat-toolbar>
+
+  </div>
+
+
+

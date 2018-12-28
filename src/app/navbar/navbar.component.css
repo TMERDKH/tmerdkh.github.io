@@ -1,28 +1,39 @@
-.navbar {
-    margin: 10px;
-    margin-left: 8%;
-    margin-right: 8%;
-    text-align: center;
-}
-
-.logo * {
-font-size: 40px;
-font-family: Snell Roundhand, cursive; 
-}
-
 .logo {
-    width: 20%;
+font-size: 3vw;
+font-family: Snell Roundhand, cursive;
+margin-left: 8vw;
+margin-right: 4vw;
 }
 
-.choices {
-    width: 60%;
+.logo-mobile {
+    font-size: 6vw;
+    font-family: Snell Roundhand, cursive;
+    margin: 20%;
 }
 
-.choices button {
-    width: 20%;
+button {
+    margin-left: 2vw;
 }
 
-.contact {
-    width:20%;
-    float:right;
-}
+
+.example-container {
+    left: 0;
+    width:100%;
+    background-color: grey;
+
+  }
+
+  .example-sidenav {
+    padding: 20px;
+    width: auto;
+    background-color: #dec4c6;
+    position: fixed;
+    left: 0;
+  }
+
+  .example-sidenav button {
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+  .mat-drawer-backdrop .mat-drawer-shown { background-color: black!important; }
