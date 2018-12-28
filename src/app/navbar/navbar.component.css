@@ -6,34 +6,36 @@ margin-right: 4vw;
 }
 
 .logo-mobile {
-    font-size: 6vw;
-    font-family: Snell Roundhand, cursive;
-    margin: 20%;
+    text-align: center;
+}
+
+.logo-mobile button {
+  font-size: 6vw;
+  font-family: Snell Roundhand, cursive;
 }
 
 button {
     margin-left: 2vw;
 }
 
+.sidenav {
+  padding: 20px;
+  width: auto;
+  background-color: #dec4c6;
+  position: fixed;
+  left: 0;
+}
 
-.example-container {
-    left: 0;
-    width:100%;
-    background-color: grey;
+.sidenav button {
+  padding: 20px;
+  margin-left: 20px;
+}
 
-  }
+.mat-drawer-backdrop .mat-drawer-shown { 
+  visibility: visibile;
+  background-color: black !important; 
+}
 
-  .example-sidenav {
-    padding: 20px;
-    width: auto;
-    background-color: #dec4c6;
-    position: fixed;
-    left: 0;
-  }
-
-  .example-sidenav button {
-    padding: 20px;
-    margin-left: 20px;
-  }
-
-  .mat-drawer-backdrop .mat-drawer-shown { background-color: black!important; }
+.container {
+  height: auto;
+}
