@@ -11,6 +11,7 @@ import { PaintingsComponent } from './paintings/paintings.component';
 import { SketchesComponent } from './sketches/sketches.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactComponent } from './contact/contact.component';
     PaintingsComponent,
     SketchesComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

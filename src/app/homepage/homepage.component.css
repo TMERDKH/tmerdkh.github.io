@@ -1,4 +1,4 @@
-div {
+* {
     text-align: center;
 }
 
@@ -6,7 +6,7 @@ div {
     position: relative;
 }
 
-#title {
+.title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,13 +21,36 @@ div {
     letter-spacing: 20px;
 }
 
-p {
-    -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 8s; /* Firefox < 16 */
-        -ms-animation: fadein 8s; /* Internet Explorer */
-         -o-animation: fadein 8s; /* Opera < 12.1 */
-            animation: fadein 8s;
+.homepage-image p {
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 6s; /* Firefox < 16 */
+        -ms-animation: fadein 6s; /* Internet Explorer */
+         -o-animation: fadein 6s; /* Opera < 12.1 */
+            animation: fadein 6s;
 }
+
+td img {
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.homepage-shop {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 15%;
+}
+
+
+.homepage-shop img:hover {
+    opacity: 0.5;
+}
+
+table {
+    width: 100%;
+}
+
+
 
 @keyframes fadein {
     from { opacity: 0; }
