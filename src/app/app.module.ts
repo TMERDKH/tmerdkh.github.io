@@ -23,7 +23,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     SketchesComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

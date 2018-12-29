@@ -1,5 +1,28 @@
-<app-navbar></app-navbar>
+<mat-drawer-container class="container" hasBackdrop=true >
+
+        <div fxShow="true" fxHide.gt-sm="true">
+            
+        <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon> </button> </div>
+    
+        <mat-drawer #drawer class="sidenav" mode="push">
+    
+            <button mat-icon-button (click)="drawer.toggle(); redirect('')"> Home </button> 
+                <br>
+            <button mat-icon-button (click)="drawer.toggle(); redirect('paintings')"> paintings </button> 
+                <br>
+            <button (click)="drawer.toggle(); redirect('sketches')"> sketches </button> 
+                <br>
+            <button (click)="drawer.toggle(); redirect('about')"> about </button> 
+                <br>
+            <button (click)="drawer.toggle(); redirect('contact')" class = "contact"> contact </button>
+    
+        </mat-drawer>
+    
+        
+        <app-navbar></app-navbar>
 
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>
+
+</mat-drawer-container>

@@ -18,7 +18,6 @@
     transform: translate(-50%, -50%);
 }
 
-
 .homepage-image * {
     font-family: none;
     font-size: 4vw;
@@ -35,30 +34,25 @@
             animation: fadein 6s;
 }
 
-td img {
+.homepage-shop img {
     margin-bottom: 10px;
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 325px;
 }
 
 .homepage-shop {
     font-size: 20px;
     font-weight: lighter;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-top: 10%;
 }
-
 
 .homepage-shop img:hover {
     opacity: 0.5;
 }
 
-table {
-    width: 100%;
+.mdc-layout-grid {
+ text-align: center;
 }
-
-
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -83,4 +77,8 @@ table {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.mdc-layout-grid__cell--span-3 {
+    border: solid black;
 }
