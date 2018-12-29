@@ -10,10 +10,11 @@ margin-right: 4vw;
 }
 
 .logo-mobile button {
-  font-size: 40px;
+  font-size: 30px;
   font-family: Snell Roundhand, cursive;
 }
 
 button {
     margin-left: 2vw;
+    font-size: 1.7vw;
 }

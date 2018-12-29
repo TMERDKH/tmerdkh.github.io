@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { PrintsComponent } from './prints/prints.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     SketchesComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    PrintsComponent
   ],
   imports: [
     BrowserModule,

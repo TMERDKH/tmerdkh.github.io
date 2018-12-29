@@ -1,5 +1,7 @@
-* {
+.content {
     text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .homepage-image {
@@ -36,8 +38,8 @@
 
 .homepage-shop img {
     margin-bottom: 10px;
-    width: 250px;
-    height: 325px;
+    width: 80%;
+    height: 80%;
 }
 
 .homepage-shop {
@@ -77,8 +79,4 @@
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
-
-.mdc-layout-grid__cell--span-3 {
-    border: solid black;
 }
