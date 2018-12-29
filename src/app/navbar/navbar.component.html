@@ -1,23 +1,6 @@
-<mat-drawer-container class="container" hasBackdrop=true >
-
-    <div fxShow="true" fxHide.gt-sm="true">
-        <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon> </button> </div>
-
-    <mat-drawer #drawer class="sidenav" mode="push">
-
-        <button mat-icon-button (click)="drawer.toggle(); redirect('paintings')">  paintings </button> 
-        <br>
-        <button (click)="drawer.toggle(); redirect('sketches')"> sketches </button> 
-        <br>
-        <button (click)="drawer.toggle(); redirect('about')"> about </button> 
-        <br>
-        <button (click)="drawer.toggle(); redirect('contact')" class = "contact"> contact </button>
-
-    </mat-drawer>
-    
-    </mat-drawer-container>
-    
+   
 <div fxShow="true" fxHide.gt-sm="true">
+
     <div class = "logo-mobile">
         <button (click)="redirect('')">  Tamar Merdkhanian </button>
     </div>
