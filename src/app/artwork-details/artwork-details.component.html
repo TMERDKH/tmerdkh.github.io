@@ -1,0 +1,33 @@
+<div *ngIf="artwork" class = "content">
+
+        <div class = "title"> <p> {{artwork.title}} </p> </div> 
+
+        <div class="mdc-layout-grid" class = "paintings">
+
+                <div class="mdc-layout-grid__inner">
+    
+                <div class="mdc-layout-grid__cell--span-8">
+
+                        <div class = "image"> <img src ="assets/images/{{artwork.title}}/{{artwork.title}}.jpeg" alt="{{artwork.title}}"> </div> 
+                        
+                </div>
+
+                <div class="mdc-layout-grid__cell--span-4">
+                
+                <div class = "details">
+
+                        <div> <p> {{artwork.description}} </p></div>
+                                <br>
+                        <div> <p> <strong> Dimensions : </strong> {{artwork.dimensions}} </p></div>
+                        <div> <p> <strong> Year : </strong>  {{artwork.year}} </p></div>
+                        <div> <p> <strong> Price : </strong>  {{artwork.price}} </p></div>
+
+                </div>
+
+                </div>
+     
+              </div>
+        
+        </div>
+
+</div>

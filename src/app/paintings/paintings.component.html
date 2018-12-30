@@ -1,3 +1,26 @@
-<p>
-  paintings works!
-</p>
+<div class = "content">
+
+        <div>
+                <div>
+                <div class = "paintings-image"> 
+                    <img src ="assets/images/cover-photo-paintings.jpg" alt="cover-photo" width = "100%">
+                    <div class = "title"> <p> Paintings </p> </div> 
+                </div> 
+                </div>
+            </div>
+    
+        
+    <div class="mdc-layout-grid" class = "paintings">
+            <div class="mdc-layout-grid__inner">
+
+            <div *ngFor="let item of paintings | keyvalue" class="mdc-layout-grid__cell"> 
+                    <div> <img  (click) = "expand(item.key)" src ="assets/images/{{item.key}}/{{item.key}}.jpeg" alt="{{item.key}}"> </div> 
+                    <div> {{item.key}} </div>
+            </div>
+ 
+          </div>
+    
+    </div>
+
+
+</div>
