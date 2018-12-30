@@ -19,10 +19,17 @@
     height: auto;
   }
 
-  .mat-sidenav-backdrop.mat-sidenav-shown {
+  .mat-drawer-backdrop.mat-drawer-shown {
     visibility: visible;
-    background-color: black;
+    background-color: black!important;
     opacity: 0.5;
+}
+
+.mat-drawer-backdrop {
+  visibility: visible!important;
+  background-color: black!important;
+  opacity: 0.5;
+
 }
 
 

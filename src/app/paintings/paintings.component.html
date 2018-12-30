@@ -12,22 +12,12 @@
         
     <div class="mdc-layout-grid" class = "paintings">
             <div class="mdc-layout-grid__inner">
-                <div class="mdc-layout-grid__cell"> 
-                        <div> <img (click)="redirect('paintings')" src ="assets/images/paintings.jpg" alt="paintings"> </div> 
-                        <div> paintings </div>
-              </div>
-                <div class="mdc-layout-grid__cell"> 
-                    <div> <img (click)="redirect('sketches')" src ="assets/images/sketches.jpg" alt="sketches"> </div> 
-                    <div> sketches </div>        
-                </div>
-                <div class="mdc-layout-grid__cell"> 
-                    <div> <img (click)="redirect('prints')" src ="assets/images/prints.jpg" alt="paintings"> </div> 
-                    <div> prints </div>
-                </div>
-                <div class="mdc-layout-grid__cell"> 
-                    <div> <img (click)="redirect('prints')" src ="assets/images/prints.jpg" alt="paintings"> </div> 
-                    <div> prints </div>
-                </div>
+
+            <div *ngFor="let item of paintings" class="mdc-layout-grid__cell"> 
+                    <div> <img  (click) = "expand({{item['title']}}" src ="assets/images/paintings/{{item['title']}}.jpeg" alt="{{item['title']}}"> </div> 
+                    <div> {{item['title']}} </div>
+            </div>
+ 
           </div>
     
     </div>
