@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { PrintsComponent } from './prints/prints.component';
+import { ArtworkDetailsComponent } from './artwork-details/artwork-details.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PrintsComponent } from './prints/prints.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    PrintsComponent
+    PrintsComponent,
+    ArtworkDetailsComponent
   ],
   imports: [
     BrowserModule,

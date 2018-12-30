@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { Artwork } from '../_models/artwork.model';
+import { ArtworksService } from '../_services/artworks.service';
 
 @Component({
   selector: 'app-paintings',
@@ -9,19 +11,15 @@ import { Router } from "@angular/router";
 export class PaintingsComponent implements OnInit {
 
   //INSERT PAINTING NAMES TO APPEAR ON PAINTINGS PAGE
-  paintings = [{ title : "reach", dimensions : "dimensions", year : "2018", price : "100$"},
-                { title : "porto-lisbon", dimensions : "dimensions", year : "2018", price : "100$"}
+  paintings = this.service.getPaintings();
 
-
-];
-
-  constructor(private router: Router) { }
+  constructor(private router: Router, private service: ArtworksService) { }
 
   ngOnInit() {
   }
 
-  expand(item) {
-    this.router.navigate(["/paintings", item]);
+  expand(artwork) {
+    this.router.navigate(["/paintings", artwork]);
   }
 
 }
