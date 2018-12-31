@@ -14,8 +14,8 @@
             <div class="mdc-layout-grid__inner">
 
             <div *ngFor="let item of paintings | keyvalue" class="mdc-layout-grid__cell"> 
-                    <div> <img  (click) = "expand(item.key)" src ="assets/images/{{item.key}}/{{item.key}}.jpeg" alt="{{item.key}}"> </div> 
-                    <div> {{item.key}} </div>
+                    <div> <img  (click) = "expand(item.key)" src ="assets/images/paintings/{{item.key}}.jpeg" alt="{{item.key}}"> </div> 
+                    <div> {{this.transform(item.key)}} </div>
             </div>
  
           </div>
