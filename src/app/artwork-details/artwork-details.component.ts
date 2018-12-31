@@ -12,7 +12,7 @@ export class ArtworkDetailsComponent implements OnInit {
 
   artwork: Artwork;
 
-  constructor(  private route: ActivatedRoute, private router: Router, private service: ArtworksService) { }
+  constructor(private route: ActivatedRoute, private service: ArtworksService) { }
 
   ngOnInit() {
 
@@ -26,7 +26,6 @@ export class ArtworkDetailsComponent implements OnInit {
   transform(str) {
 
     var str_new = str.replace("-", " ");
-    console.log(str);
 
     return str_new;
   }

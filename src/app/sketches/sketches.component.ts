@@ -23,7 +23,6 @@ export class SketchesComponent implements OnInit {
   transform(str) {
 
     var str_new = str.replace("-", " ");
-    console.log(str);
 
     return str_new;
   }

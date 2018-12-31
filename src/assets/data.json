@@ -1,0 +1,17 @@
+{
+    "paintings" : [
+        
+        {"title": "reach", "description" : "abstract work.", "dimensions": "20x20", "year" : "2018", "price" : "100$", "category" : "paintings"},
+        {"title": "porto-lisbon", "description" : "abstract work.", "dimensions": "20x20", "year" : "2018", "price" : "100$", "category" : "paintings"},
+        {"title": "reach", "description" : "abstract work.", "dimensions": "20x20", "year" : "2018", "price" : "100$", "category" : "paintings"}
+],
+
+    "sketches" : [
+        
+        {"title": "journey", "description" : "abstract work.", "dimensions": "20x20", "year" : "2018", "price" : "100$", "category" : "sketches"}
+], 
+
+    "contact" : "so call me maybeee",
+
+    "about" : "hello izza me"}
+
