@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { PrintsComponent } from './prints/prints.component';
 import { ArtworkDetailsComponent } from './artwork-details/artwork-details.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ArtworkDetailsComponent } from './artwork-details/artwork-details.compo
     MatSidenavModule,
     MatIconModule,
     MatSelectModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

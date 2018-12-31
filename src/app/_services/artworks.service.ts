@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Artwork } from '../_models/artwork.model';
-
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { HttpClient } from '@angular/common/http'; 
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,22 +9,21 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 
 export class ArtworksService {
 
-  paintings : {[key: string]: Artwork} = 
-  
-{ "reach": new Artwork("reach", "abstract work.", "20x20", "2018", "100$", "paintings"),
-"porto-lisbon": new Artwork("porto-lisbon", "abstract work.", "20x20", "2018", "100$", "paintings") ,
-"moving-on": new Artwork("moving-on", "abstract work.", "20x20", "2018", "100$", "paintings") 
+file = "./assets/data.json";
 
+paintings : {[key: string]: Artwork} = {};
 
-};
+sketches : {[key: string]: Artwork} = {}
 
-sketches : {[key: string]: Artwork} =  
-{ 
- "journey" : new Artwork("journey", "descriptionnnn", "30x30", "2018", "price", "sketches")
+contact = "so call me maybeee";
 
-};
+about = "hello izza me";
 
-  constructor() { }
+constructor(private http: HttpClient) {
+  this.getJSON().subscribe(data => {
+      this.manipulate(data);
+  });
+}
 
 getArtwork(title) {
 
@@ -42,6 +41,36 @@ getPaintings() {
 
 getSketches() {
   return this.sketches;
+}
+
+public getJSON(): Observable<any> {
+  return this.http.get(this.file);
+}
+
+public manipulate(data) {
+
+   var paintings =  data.paintings;
+   var sketches =  data.sketches;
+   var about =  data.about;
+   var contact =  data.contact;
+
+   var i;
+   var painting;
+   for(i = 0; i < paintings.length; i++) {
+    painting = paintings[i];
+    this.paintings[painting.title] = new Artwork(painting.title, painting.description, painting.dimensions, painting.year, painting.price, painting.category);
+ }
+
+  var x;
+  var sketch;
+  for(x = 0; x < sketches.length; x++) {
+    sketch = sketches[x];
+    this.sketches[sketch.title] = new Artwork(sketch.title, sketch.description, sketch.dimensions, sketch.year, sketch.price, sketch.category);
+  }
+
+  this.contact = contact;
+  this.about = about;
+
 }
 
 }

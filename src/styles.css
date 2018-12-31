@@ -22,4 +22,11 @@ button:focus, button:active, button:focus:active {
     box-shadow: none;
   }
 
+  .title p {
+    font-family: none;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1vw;
+}
+
 
