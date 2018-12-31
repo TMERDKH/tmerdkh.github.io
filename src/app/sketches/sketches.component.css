@@ -1,0 +1,53 @@
+.content {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sketches-image {
+    position: relative;
+    margin-top: 10px;
+}
+
+.sketches-image img {
+    width: 85vw;
+}
+
+.title p {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sketches-image * {
+    font-family: none;
+    font-size: 4vw;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1vw;
+} 
+
+.sketches img {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.sketches img:hover {
+    opacity: 0.5;
+}
+
+.sketches {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 5%;
+}
+
+.mdc-layout-grid {
+ text-align: center;
+}
+
+.mdc-layout-grid {
+    margin: -16px;
+  }

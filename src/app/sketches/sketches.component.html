@@ -1,3 +1,26 @@
-<p>
-  sketches works!
-</p>
+<div class = "content">
+
+    <div>
+            <div>
+            <div class = "sketches-image"> 
+                <img src ="assets/images/cover-photo-sketches.jpg" alt="cover-photo" width = "100%">
+                <div class = "title"> <p> Sketches </p> </div> 
+            </div> 
+            </div>
+        </div>
+
+    
+<div class="mdc-layout-grid" class = "sketches">
+        <div class="mdc-layout-grid__inner">
+
+        <div *ngFor="let item of sketches | keyvalue" class="mdc-layout-grid__cell"> 
+                <div> <img  (click) = "expand(item.key)" src ="assets/images/sketches/{{item.key}}.jpeg" alt="{{item.key}}"> </div> 
+                <div> {{this.transform(item.key)}} </div>
+        </div>
+
+      </div>
+
+</div>
+
+
+</div>

@@ -1,6 +1,6 @@
 <div *ngIf="artwork" class = "content">
 
-        <div class = "title"> <p> {{artwork.title}} </p> </div> 
+        <div class = "title"> <p> {{this.transform(artwork.title)}} </p> </div> 
 
         <div class="mdc-layout-grid" class = "paintings">
 
@@ -8,7 +8,7 @@
     
                 <div class="mdc-layout-grid__cell--span-8">
 
-                        <div class = "image"> <img src ="assets/images/{{artwork.title}}/{{artwork.title}}.jpeg" alt="{{artwork.title}}"> </div> 
+                        <div class = "image"> <img src ="assets/images/{{artwork.category}}/{{artwork.title}}.jpeg" alt="{{artwork.title}}"> </div> 
                         
                 </div>
 

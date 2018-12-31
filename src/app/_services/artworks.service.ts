@@ -11,13 +11,18 @@ export class ArtworksService {
 
   paintings : {[key: string]: Artwork} = 
   
-{ "reach": new Artwork("reach", "abstract work.", "20x20", "2018", "100$") 
-
+{ "reach": new Artwork("reach", "abstract work.", "20x20", "2018", "100$", "paintings"),
+"porto-lisbon": new Artwork("porto-lisbon", "abstract work.", "20x20", "2018", "100$", "paintings") ,
+"moving-on": new Artwork("moving-on", "abstract work.", "20x20", "2018", "100$", "paintings") 
 
 
 };
 
-  sketches  = {};
+sketches : {[key: string]: Artwork} =  
+{ 
+ "journey" : new Artwork("journey", "descriptionnnn", "30x30", "2018", "price", "sketches")
+
+};
 
   constructor() { }
 

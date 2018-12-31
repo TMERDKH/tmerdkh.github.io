@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import { Artwork } from '../_models/artwork.model';
 import { ArtworksService } from '../_services/artworks.service';
 
 @Component({
@@ -10,7 +9,6 @@ import { ArtworksService } from '../_services/artworks.service';
 })
 export class PaintingsComponent implements OnInit {
 
-  //INSERT PAINTING NAMES TO APPEAR ON PAINTINGS PAGE
   paintings = this.service.getPaintings();
 
   constructor(private router: Router, private service: ArtworksService) { }
@@ -20,6 +18,14 @@ export class PaintingsComponent implements OnInit {
 
   expand(artwork) {
     this.router.navigate(["/paintings", artwork]);
+  }
+
+  transform(str) {
+
+    var str_new = str.replace("-", " ");
+    console.log(str);
+
+    return str_new;
   }
 
 }

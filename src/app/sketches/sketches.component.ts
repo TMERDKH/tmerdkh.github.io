@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
+import { ArtworksService } from '../_services/artworks.service';
 
 @Component({
   selector: 'app-sketches',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SketchesComponent implements OnInit {
 
-  constructor() { }
+  sketches = this.service.getSketches();
+
+  constructor(private router: Router, private service: ArtworksService) { }
 
   ngOnInit() {
+  }
+
+  expand(artwork) {
+    this.router.navigate(["/sketches", artwork]);
+  }
+
+  transform(str) {
+
+    var str_new = str.replace("-", " ");
+    console.log(str);
+
+    return str_new;
   }
 
 }
