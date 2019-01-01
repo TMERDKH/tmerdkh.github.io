@@ -9,5 +9,13 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng lint
-- ng build --prod --base-href https://legendoftamar.github.io/legendoftamar/
+
+- git push --delete origin gh-pages
+
+- git branch -d gh-pages
+
+- git checkout -b gh-pages
+
+- ng build --prod --output-path legendoftamar --base-href="https://legendoftamar.github.io/legendoftamar/"
+
+- sudo ngh --dir=/legendoftamar
