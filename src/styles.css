@@ -33,7 +33,7 @@ button:focus, button:active, button:focus:active {
   }
 
   .title p {
-    font-family: none;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 1vw;
