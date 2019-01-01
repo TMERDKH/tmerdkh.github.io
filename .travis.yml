@@ -10,8 +10,6 @@ before_script:
   - npm install -g @angular/cli
 script:
 
-- git checkout -b gh-pages
-
 - ng build --prod --output-path legendoftamar --base-href="https://legendoftamar.github.io/legendoftamar/"
 
 deploy:
