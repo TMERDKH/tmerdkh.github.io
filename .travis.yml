@@ -14,4 +14,10 @@ script:
 
 - ng build --prod --output-path legendoftamar --base-href="https://legendoftamar.github.io/legendoftamar/"
 
-- ngh --dir=/legendoftamar
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/legendoftamar
+  on:
+    branch: master
