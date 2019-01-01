@@ -9,5 +9,13 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng lint
-- ng build --prod --base-href https://legendoftamar.github.io/legendoftamar/
+
+- ng build --prod --output-path legendoftamar --base-href="https://legendoftamar.github.io/legendoftamar/"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: legendoftamar
+  on:
+    branch: master
