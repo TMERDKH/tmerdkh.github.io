@@ -11,6 +11,7 @@ src: url(assets/fonts/Snell.otf) format("opentype");
 * {
     font-family: Optima;
     font-size: 20px;
+    line-height: 30px;
 }
 
 button {

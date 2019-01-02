@@ -15,10 +15,6 @@ paintings : {[key: string]: Artwork} = {};
 
 sketches : {[key: string]: Artwork} = {}
 
-contact = "so call me maybeee";
-
-about = "hello izza me";
-
 constructor(private http: HttpClient) {
   this.getJSON().subscribe(data => {
       this.manipulate(data);
@@ -51,8 +47,6 @@ public manipulate(data) {
 
    var paintings =  data.paintings;
    var sketches =  data.sketches;
-   var about =  data.about;
-   var contact =  data.contact;
 
    var i;
    var painting;
@@ -67,9 +61,6 @@ public manipulate(data) {
     sketch = sketches[x];
     this.sketches[sketch.title] = new Artwork(sketch.title, sketch.description, sketch.dimensions, sketch.year, sketch.price, sketch.category);
   }
-
-  this.contact = contact;
-  this.about = about;
 
 }
 

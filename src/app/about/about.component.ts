@@ -8,11 +8,8 @@ import { ArtworksService } from '../_services/artworks.service';
 })
 export class AboutComponent implements OnInit {
 
-  about = this.service.about;
-
   constructor(private service: ArtworksService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

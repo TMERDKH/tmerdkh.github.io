@@ -8,8 +8,6 @@ import { ArtworksService } from '../_services/artworks.service';
 })
 export class ContactComponent implements OnInit {
 
-  contact = this.service.contact;
-
   constructor(private service: ArtworksService) { }
 
   ngOnInit() {

@@ -5,6 +5,10 @@
     margin-top: 5%;
 }
 
+.details div {
+    text-align: left;
+}
+
 .details {
-    margin-top: 5%;
+    margin-bottom: 30%;
 }
