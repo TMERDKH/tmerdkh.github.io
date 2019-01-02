@@ -32,6 +32,8 @@
     margin-bottom: 10px;
     width: 90%;
     height: 90%;
+    padding: 2%;
+    border: solid black;
 }
 
 .sketches img:hover {

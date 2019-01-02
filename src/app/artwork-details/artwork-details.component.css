@@ -12,3 +12,8 @@ img {
 .details {
     margin-top: 20%;
 }
+
+.description {
+    margin-bottom: 60px;
+    font-style: italic;
+}
