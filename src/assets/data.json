@@ -9,7 +9,7 @@
         {"title": "the-composer", "description" : "Acrylic. Inspired by the Armenian legend of the princess Tamar.", "dimensions": "", "year" : "2016", "price" : "400$", "category" : "paintings"},
         {"title": "vinyl", "description" : "Acrylic & stickers. Painting representing a significant change in how I view the world through music.", "dimensions": "", "year" : "2018", "price" : "350$", "category" : "paintings"},
         {"title": "winter", "description" : "Aquarelle.", "dimensions": "", "year" : "2012", "price" : "150$", "category" : "paintings"},
-        {"title": "the-expressionist", "description" : "Acrylic.", "dimensions": "", "year" : "2014", "price" : "150$", "category" : "paintings"}
+        {"title": "the-expressionist", "description" : "Acrylic. ", "dimensions": "", "year" : "2014", "price" : "150$", "category" : "paintings"}
     ],
 
     "sketches" : [
