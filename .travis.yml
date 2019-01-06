@@ -15,7 +15,7 @@ before_script:
   - npm install -g @angular/cli
   
 script:
-- ng build --prod --base-href=https://legendoftamar.com/
+- ng build --prod --base-href=https://legendoftamar.github.io/legendoftamar
 
 deploy:
   provider: pages
