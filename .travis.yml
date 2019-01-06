@@ -16,6 +16,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: legendoftamar
+  local_dir: dist/legendoftamar
   on:
     branch: master
