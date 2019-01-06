@@ -8,9 +8,9 @@ branches:
   - master
 before_script:
   - npm install -g @angular/cli
+  
 script:
-
-- ng build --prod --output-path legendoftamar --base-href="legendoftamar.github.io/legendoftamar"
+- ng build --prod --output-path legendoftamar --base-href="https://legendoftamar.github.io/legendoftamar/"
 
 deploy:
   provider: pages
