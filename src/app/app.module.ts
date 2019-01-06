@@ -43,7 +43,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     MatFormFieldModule,
     HttpClientModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
