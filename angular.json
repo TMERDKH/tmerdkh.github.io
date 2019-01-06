@@ -85,8 +85,7 @@
             "scripts": [],
             "assets": [
               "src/favicon.png",
-              "src/assets",
-              "./CNAME"
+              "src/assets"
             ]
           }
         },
