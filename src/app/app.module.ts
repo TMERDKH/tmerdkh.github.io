@@ -16,6 +16,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { PrintsComponent } from './prints/prints.component';
 import { ArtworkDetailsComponent } from './artwork-details/artwork-details.component';
 import { HttpClientModule } from '@angular/common/http'; 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
