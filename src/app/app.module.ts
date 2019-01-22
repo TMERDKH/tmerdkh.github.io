@@ -15,8 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { PrintsComponent } from './prints/prints.component';
 import { ArtworkDetailsComponent } from './artwork-details/artwork-details.component';
-import { HttpClientModule } from '@angular/common/http'; 
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
