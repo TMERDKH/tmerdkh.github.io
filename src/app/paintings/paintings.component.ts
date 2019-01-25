@@ -17,7 +17,7 @@ export class PaintingsComponent implements OnInit {
   }
 
   expand(artwork) {
-    this.router.navigate(["/paintings", artwork]);
+    this.router.navigate([artwork]);
   }
 
   transform(str) {

@@ -17,7 +17,7 @@ export class SketchesComponent implements OnInit {
   }
 
   expand(artwork) {
-    this.router.navigate(["/sketches", artwork]);
+    this.router.navigate([artwork]);
   }
 
   transform(str) {

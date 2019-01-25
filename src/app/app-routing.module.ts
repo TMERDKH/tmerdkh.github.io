@@ -12,12 +12,11 @@ import { ArtworkDetailsComponent } from './artwork-details/artwork-details.compo
 const routes: Routes = [
   { path: '', component: HomepageComponent},
   { path: 'paintings', component: PaintingsComponent},
-  { path: 'paintings/:title', component: ArtworkDetailsComponent},
   { path: 'sketches', component: SketchesComponent},
-  { path: 'sketches/:title', component: ArtworkDetailsComponent},
   { path: 'prints', component: PrintsComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: ':title', component: ArtworkDetailsComponent}
 ];
 
 @NgModule({
