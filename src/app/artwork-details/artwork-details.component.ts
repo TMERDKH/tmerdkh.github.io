@@ -10,11 +10,13 @@ import { Router, ActivatedRoute} from '@angular/router';
 })
 export class ArtworkDetailsComponent implements OnInit {
 
-  artwork: Artwork;
+  artwork: Artwork; 
 
   constructor(private route: ActivatedRoute, private service: ArtworksService) { }
 
   ngOnInit() {
+
+    console.log("lol");
 
     var title;
     this.route.paramMap.subscribe(param => { title = param.get('title'); });

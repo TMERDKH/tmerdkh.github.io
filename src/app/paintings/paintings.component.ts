@@ -9,7 +9,7 @@ import { ArtworksService } from '../_services/artworks.service';
 })
 export class PaintingsComponent implements OnInit {
 
-  paintings = this.service.getPaintings();
+  paintings = this.service.paintings;
 
   constructor(private router: Router, private service: ArtworksService) { }
 
@@ -17,6 +17,7 @@ export class PaintingsComponent implements OnInit {
   }
 
   expand(artwork) {
+    console.log(artwork);
     this.router.navigate([artwork]);
   }
 

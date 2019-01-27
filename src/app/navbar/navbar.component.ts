@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   }
 
   redirect(page) {
+    console.log('/'+page);
     this.router.navigate(['/'+page]);
   }
 

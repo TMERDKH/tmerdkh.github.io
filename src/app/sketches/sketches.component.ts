@@ -9,7 +9,7 @@ import { ArtworksService } from '../_services/artworks.service';
 })
 export class SketchesComponent implements OnInit {
 
-  sketches = this.service.getSketches();
+  sketches = this.service.sketches;
 
   constructor(private router: Router, private service: ArtworksService) { }
 

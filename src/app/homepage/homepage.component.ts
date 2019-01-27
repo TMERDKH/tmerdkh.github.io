@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { ArtworksService } from '../_services/artworks.service';
 
 @Component({
   selector: 'app-homepage',
@@ -8,7 +9,7 @@ import { Router } from "@angular/router";
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private service: ArtworksService) { }
 
   ngOnInit() {
   }
