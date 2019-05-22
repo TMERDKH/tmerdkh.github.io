@@ -1,3 +1,26 @@
-<p>
-Prints coming soon...
-</p>
+<div class = "content">
+
+    <div>
+            <div>
+            <div class = "prints-image"> 
+                <img src ="assets/images/cover-photo-prints.jpg" alt="cover-photo" width = "100%">
+                <div class = "title"> <p> Prints </p> </div> 
+            </div> 
+            </div>
+        </div>
+
+    
+<div class="mdc-layout-grid" class = "prints">
+        <div class="mdc-layout-grid__inner">
+
+        <div *ngFor="let item of prints | keyvalue" class="mdc-layout-grid__cell"> 
+                <div> <img  (click) = "expand(item.key)" src ="assets/images/prints/{{item.key}}.jpeg" alt="{{item.key}}"> </div> 
+                <div> {{this.transform(item.key)}} </div>
+        </div>
+
+      </div>
+
+</div>
+
+
+</div>

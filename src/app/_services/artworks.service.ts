@@ -11,7 +11,8 @@ export class ArtworksService {
 
 file = "./assets/data.json";
 paintings : {[key: string]: Artwork} = {};
-sketches : {[key: string]: Artwork} = {}
+sketches : {[key: string]: Artwork} = {};
+prints : {[key: string]: Artwork} = {};
 
 constructor(private http: HttpClient) {
   var data = {
@@ -35,6 +36,16 @@ constructor(private http: HttpClient) {
         {"title": "alex-turner", "description" : "Portrait of Alex Turner from the Arctic Monkeys.", "dimensions": "9\" x 12\"", "year" : "2018", "price" : "100$", "category" : "sketches"},
         {"title": "rapunzel", "description" : "Portrait of Rapunzel from Tangled.", "dimensions": "9\" x 12\"", "year" : "2012", "price" : "100$", "category" : "sketches"},
         {"title": "emmenez-moi", "description" : "Sketch motivated by my dream of visiting Paris.", "dimensions": "9\" x 12\"", "year" : "2014", "price" : "150$", "category" : "sketches"}
+],
+"prints" : [
+        
+  {"title": "architecture park", "description" : "My cubist perspective on one of my favorite parks in Montreal.", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
+  {"title": "daffodils", "description" : "Inspired by the poem 'I Wandered Lonely as a Cloud' by William Wordsworth.", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
+  {"title": "faces", "description" : "", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
+  {"title": "fineline", "description" : "", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
+  {"title": "pianist", "description" : "", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
+  {"title": "the daisy", "description" : "", "dimensions": "\n 5\" x 7\" ", "year" : "2019", "price" : "10$", "category" : "prints"},  
+  {"title": "Rosemary", "description" : "", "dimensions": "\n8\" x 10\" \n 5\" x 7\" ", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"}
 ]
 }
 
@@ -46,8 +57,11 @@ getArtwork(title) {
   if (this.paintings[title] ) {
     return this.paintings[title];
   }
-  else {
+  if (this.sketches[title]){
     return this.sketches[title];
+  }
+  else {
+    return this.prints[title];
   }
 }
 
@@ -59,6 +73,10 @@ getSketches() {
   return this.sketches;
 }
 
+getPrint() {
+  return this.prints;
+}
+
 public getJSON(): Observable<any> {
   return this.http.get(this.file);
 }
@@ -67,6 +85,7 @@ public manipulate(data) {
 
    var paintings =  data.paintings;
    var sketches =  data.sketches;
+   var prints = data.prints;
 
    var i;
    var painting;
@@ -80,6 +99,13 @@ public manipulate(data) {
   for(x = 0; x < sketches.length; x++) {
     sketch = sketches[x];
     this.sketches[sketch.title] = new Artwork(sketch.title, sketch.description, sketch.dimensions, sketch.year, sketch.price, sketch.category);
+  }
+
+  var y;
+  var print;
+  for(x = 0; x < prints.length; x++) {
+    print = prints[x];
+    this.prints[print.title] = new Artwork(print.title, print.description, print.dimensions, print.year, print.price, print.category);
   }
 
 }
