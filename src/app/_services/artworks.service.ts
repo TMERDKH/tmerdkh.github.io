@@ -39,12 +39,13 @@ constructor(private http: HttpClient) {
 ],
 "prints" : [
         
-  {"title": "architecture park", "description" : "My cubist perspective on one of my favorite parks in Montreal.", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
+  {"title": "architecture-park", "description" : "My cubist perspective on one of my favorite parks in Montreal.", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
   {"title": "daffodils", "description" : "Inspired by the poem 'I Wandered Lonely as a Cloud' by William Wordsworth.", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
   {"title": "faces", "description" : "", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
   {"title": "fineline", "description" : "", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
   {"title": "pianist", "description" : "", "dimensions": "5\" x 7\" or 8\" x 10\"", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"},
-  {"title": "the daisy", "description" : "", "dimensions": "\n 5\" x 7\" ", "year" : "2019", "price" : "10$", "category" : "prints"},  
+  {"title": "the-daisy", "description" : "", "dimensions": "\n 5\" x 7\" ", "year" : "2019", "price" : "10$", "category" : "prints"},  
+  {"title": "woman", "description" : "", "dimensions": "\n 5\" x 7\" ", "year" : "2019", "price" : "10$", "category" : "prints"},  
   {"title": "Rosemary", "description" : "", "dimensions": "\n8\" x 10\" \n 5\" x 7\" ", "year" : "2019", "price" : "10$ - 15$", "category" : "prints"}
 ]
 }
