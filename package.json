@@ -11,29 +11,29 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~7.1.0",
+    "@angular/animations": "~10.0.2",
     "@angular/cdk": "^7.2.0",
-    "@angular/common": "~7.1.0",
-    "@angular/compiler": "~7.1.0",
-    "@angular/core": "~7.1.0",
-    "@angular/flex-layout": "^7.0.0-beta.22",
-    "@angular/forms": "~7.1.0",
+    "@angular/common": "~10.0.2",
+    "@angular/compiler": "~10.0.2",
+    "@angular/core": "~10.0.2",
+    "@angular/flex-layout": "^9.0.0-beta.22",
+    "@angular/forms": "~10.0.2",
     "@angular/material": "^7.2.0",
-    "@angular/platform-browser": "~7.1.0",
-    "@angular/platform-browser-dynamic": "~7.1.0",
-    "@angular/router": "~7.1.0",
+    "@angular/platform-browser": "~10.0.2",
+    "@angular/platform-browser-dynamic": "~10.0.2",
+    "@angular/router": "~10.0.2",
     "@material/layout-grid": "^0.41.0",
     "core-js": "^2.5.4",
-    "rxjs": "^6.3.3",
+    "rxjs": "^6.5.5",
     "simple-rotating-banner": "^1.2.0",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1000.0",
     "@angular/cli": "^10.0.0",
     "@angular/compiler-cli": "^10.0.2",
-    "@angular/language-service": "~7.1.0",
+    "@angular/language-service": "~10.0.2",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -48,6 +48,6 @@
     "protractor": "^7.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "~3.9.5"
   }
 }

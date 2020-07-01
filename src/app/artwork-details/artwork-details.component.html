@@ -4,27 +4,10 @@
 
         <div class="mdc-layout-grid" class = "paintings">
 
-                <div class="mdc-layout-grid__inner">
-    
-                <div class="mdc-layout-grid__cell--span-8">
-
-                        <div class = "image"> <img src ="assets/images/{{artwork.category}}/{{artwork.title}}.jpg" alt="{{artwork.title}}"> </div> 
-                        
-                </div>
-
-                <div class="mdc-layout-grid__cell--span-4">
-                
-                <div class = "details">
-
-                        <div class = "description"> {{artwork.description}} </div>
-                        <div> <strong> Dimensions : </strong> {{artwork.dimensions}} </div>
-                        <div> <strong> Year : </strong>  {{artwork.year}} </div>
-                        <div> <strong> Price : </strong>  {{artwork.price}} </div>
-
-                </div>
-
-                </div>
-     
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-2"></div>
+                <div class="mdc-layout-grid__cell--span-8">  <div class = "image"> <img src ="assets/images/{{artwork.category}}/{{artwork.title}}.jpg" alt="{{artwork.title}}"> </div> </div>
+                <div class="mdc-layout-grid__cell--span-2"></div>
               </div>
         
         </div>
